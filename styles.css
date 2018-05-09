@@ -1,0 +1,97 @@
+body {
+    height: 120vh;
+}
+
+.something {
+    background-color:rgba(255,0,0,0.5);
+    color: white;
+}
+
+.layer { 
+  background: url(images/machines/A03.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.movement { 
+  background: url("images/movements/Avoidance 4 Movement.png") 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.model { 
+  background: url(images/machines/A03.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.tempo { 
+  background: url(images/tempo/quick.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.bodypart { 
+  background: url(images/body/knee.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.direction { 
+  background: url(images/direction/north.png) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.adjectives { 
+  background: url(images/adjectives/ancient.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.texture { 
+  background: url(images/texture/soft.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+  background-size: 100% 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.app {
+    padding: 5px;
+}
+
+.header {
+    width: 600px;
+    margin: 10px auto;
+}
+
+.controls {
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+#canvas {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.box {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.outline {
+    border: 1px dotted #c8c8c8;
+}

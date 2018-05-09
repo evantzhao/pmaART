@@ -5,10 +5,11 @@ tempo = ["walking", "iambic", "downbeat", "medium", "peaceful", "quick", "slow"]
 body = ["elbow","knee","forehead","ear","knuckle","nostril","earlobe","kneecap","belly","thigh","calf","wrist","teeth","triceps","shoulderblades","elbow","cheekbone","shoulderblades","eyebrow","eyebrow"]
 adj = ["warm","warm","freezing","moist","determined","courage","cowardly","warm","freezing","surviving","surviving","angry","bewildered","broad","thundering","ancient","ancient","bitter","abundant","heavy"]
 texture = ["silk","carpet","polyester","sandpaper","sandpaper","carpet","soft","hard","amorphous","silk","amorphous","broken","broken","carpet","soft","hard","amorphous","rounded","rounded","silk"]
+layer = ["entrance - dots lines planes", "entrance - planes", "foyer - lines", "foyer - lines and planes", "foyer - planes", "foyer - points", "foyer - volume", "stairwell - dots", "stairwell - dots lines", "stairwell - dots lines planes", "stairwell - planes", "stairwell - planes and volumes", "stairwell - points", "stairwell - volume and line"]
 
 function updateImage(x, y) {
-    $(".layer").css('background-image', `url(images/machines/${models[x % models.length]}.jpg)`);
-    $(".layer > p").text(models[x % models.length]);
+    $(".model").css('background-image', `url(images/machines/${models[x % models.length]}.jpg)`);
+    $(".model > p").text(models[x % models.length]);
     
     $(".movement").css('background-image', `url(images/movements/${encodeURI(movement[y % movement.length])}.png)`);
     $(".movement > p").text(movement[y % movement.length]);
@@ -27,6 +28,11 @@ function updateImage(x, y) {
 
     $(".texture").css('background-image', `url(images/texture/${texture[parseInt(((y * y * y) / x) + 30) % texture.length]}.jpg)`);
     $(".texture > p").text(texture[parseInt(((y * y * y) / x) + 30) % texture.length]);
+
+    console.log(layer[parseInt(((x * x * y) / x) + 30) % layer.length])
+
+    $(".layer").css('background-image', `url(images/layers/${encodeURI(layer[parseInt(((x * x * y) / x) + 30) % layer.length])}.png)`);
+    $(".layer > p").text(layer[parseInt(((x * x * y) / x) + 30) % layer.length]);
 }
 
 
